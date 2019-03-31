@@ -1,0 +1,19 @@
+<h1>Articles on Green Energy and Cleantech</h1>
+<p>From https://www.yaleclimateconnections.org/</p>
+
+{{#each this}}
+{{#if this.title}}
+<div class="card-columns">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">{{this.title}}</h4>
+            <a href={{this.link}}>
+                <p class="card-text">Original Article {{this.link}} </p>
+            </a>
+            <p class="card-text">From: {{this.source}}</p>
+            <p class="card-text">{{this.comments}}</p>
+        </div>
+    </div>
+</div>
+{{/if}}
+{{/each}}
